@@ -3,7 +3,11 @@
   <entry>
     <title>使用Hexo搭建博客</title>
     <url>/2023/05/22/1/</url>
-    <content><![CDATA[<p>工具：VScode,git,码云,Hexo<br>1， 安装git,官网下载安装<a href="https://git-scm.com/downloads">git下载地址</a><br>2， 安装node，官网下载安装<a href="https://nodejs.org/zh-cn/download">node下载地址</a><br>3， Hexo安装 npm install hexo-cli -g<br>4， 创建项目 hexo init 项目名称<br>5， Hexo主题选择，我选择的是ayer ，把主题下载之后放在themes目录中；或者使用git命令下载ayer主题。<br>6， 参考<a href="https://hexo.io/zh-cn/">Hexo官网</a>和<a href="https://shen-yu.gitee.io/2019/ayer/">ayer文档</a>说明文档<br>7， <a href="https://gitee.com/">gitee注册</a>，使用静态页面服务，根据生成的域名就可以访问博客了</p>
+    <content><![CDATA[<p>工具：VScode,git,码云,Hexo<br>1， 安装git,官网下载安装<a href="https://git-scm.com/downloads">git下载地址</a><br>2， 安装node，官网下载安装<a href="https://nodejs.org/zh-cn/download">node下载地址</a><br>3， Hexo安装 npm install hexo-cli -g<br>4， 创建项目 hexo init 项目名称<br>5， Hexo主题选择，我选择的是ayer ，把主题下载之后放在themes目录中；或者使用git命令下载ayer主题。<br>6， 参考<a href="https://hexo.io/zh-cn/">Hexo官网</a>和<a href="https://shen-yu.gitee.io/2019/ayer/">ayer文档</a>说明文档<br>7， <a href="https://gitee.com/">gitee注册</a>，使用静态页面服务，根据生成的域名就可以访问博客了<br>8， Hexo插件</p>
+<ul>
+<li>看板娘 hexo-helper-live2d 模型 live2d-widget-model-z16</li>
+<li>搜索 hexo-generator-searchdb</li>
+</ul>
 <h2 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 清理编译文件</span><br><span class="line">hexo clean</span><br><span class="line"># 构建静态文件</span><br><span class="line">hexo g</span><br><span class="line"># 启动本地Hexo项目</span><br><span class="line">hexo s</span><br><span class="line"># 上传到仓库</span><br><span class="line">hexo d</span><br><span class="line"># 新增文章，默认在source/_posts目录中</span><br><span class="line">hexo new &quot;文件名称&quot;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>Hexo</category>
