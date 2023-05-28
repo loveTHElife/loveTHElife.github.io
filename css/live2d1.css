@@ -3,11 +3,10 @@ a {
 }
 
 #live2d-widget {
-    animation-name: mySixth;
+    animation-name: myTenth;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-direction: reverse;
     animation-delay: 0;
 }
 
@@ -235,13 +234,16 @@ a {
         opacity: 0;
         width: 100%;
         height: 0;
+        bottom: 5%;
+        left: 0;
     }
 
     25% {
         opacity: 0.3;
         width: 75%;
         height: 25%;
-        bottom: 0;
+        bottom: 15%;
+        left: 25%;
     }
 
     50% {
@@ -249,20 +251,23 @@ a {
         width: 50%;
         height: 50%;
         bottom: 20%;
+        left: 50%;
     }
 
     75% {
         opacity: 0.8;
         width: 25%;
         height: 75%;
-        bottom: 40%;
+        bottom: 25%;
+        left: 75%;
     }
 
     100% {
         opacity: 1;
         width: 0;
         height: 100%;
-        bottom: 65%;
+        bottom: 30%;
+        left: 100%;
     }
 }
 
