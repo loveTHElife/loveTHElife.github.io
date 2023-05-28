@@ -1,13 +1,5 @@
 a {
-    display: block;
     text-decoration: none;
-    color: black;
-    text-align: center;
-
-}
-
-tr {
-    text-shadow: 5px 5px 5px skyblue;
 }
 
 #live2d-widget {
