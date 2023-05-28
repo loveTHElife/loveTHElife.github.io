@@ -8,5 +8,5 @@ window.onload = function () {
     }
     //切换动画第一first、第二second 、第三third、第四fourth 、第五fifth 、第六sixth 、第七seventh
     //第八eighth ,第九ninth 、第十tenth
-    setInterval(function () { myTimer() }, Math.round(Math.random()) * 5000 + 5000);
+    setInterval(function () { myTimer() }, Math.round(Math.random() * 5000) + 5000);
 }
