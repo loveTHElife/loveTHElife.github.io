@@ -45,7 +45,152 @@
   <entry>
     <title>页面适配设备</title>
     <url>/2023/05/30/2/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<ol>
+<li>可视区域</li>
+</ol>
+<ul>
+<li>用户网页的可视区域（viewport）,设置 viewport<br>一个常用的针对移动网页优化过的页面的 viewport meta 标签大致如下<br><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code><table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">width</td>
+<td align="center">控制 viewport 的大小，如 device-width 为设备的宽度（单位为缩放为 100% 时的 CSS 的像素）</td>
+</tr>
+<tr>
+<td align="center">initial-scale</td>
+<td align="center">初始缩放比例，也即是当页面第一次 load 的时候缩放比例</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<ol start="2">
+<li>弹性盒子布局</li>
+</ol>
+<ul>
+<li>弹性盒子( flex box ) 是 CSS3 的一种新的布局模式，当页面需要适应不同的屏幕大小以及设备类型时确保元素拥有恰当的行为的布局方式</li>
+<li>弹性盒子由弹性容器(Flex container)和弹性子元素(Flex item)组成，弹性容器通过设置 display 属性的值为 flex 或 inline-flex 将其定义为弹性容器<table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">justify-content</td>
+<td align="center">设置内容水平对齐方式</td>
+</tr>
+<tr>
+<td align="center">align-items</td>
+<td align="center">设置内容垂直对齐方式</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<ol start="3">
+<li>浮动布局</li>
+</ol>
+<ul>
+<li>float 属性可以设置 HTML 元素浮动，float（浮动），会使元素向左或向右移动，其周围的元素也会重新排列，一个浮动元素会尽量向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止，元素浮动之后，周围的元素会重新排列，为了避免这种情况，使用 clear 属性，clear 属性指定元素两侧不能出现浮动元素<table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">left</td>
+<td align="center">元素向左移动</td>
+</tr>
+<tr>
+<td align="center">right</td>
+<td align="center">元素向右移动</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<ol start="4">
+<li>定位布局</li>
+</ol>
+<ul>
+<li>position 属性指定了元素的定位类型<br>position 属性的四个值:static、relative、fixed、absolute</li>
+<li>元素可以使用顶部，底部，左侧和右侧属性定位</li>
+<li>static HTML 元素的默认值，即没有定位，元素出现在正常的流中,静态定位的元素不会受到 top, bottom, left, right 影响</li>
+<li>fixed 元素的位置相对于浏览器窗口是固定位置,fixed 定位使元素的位置与文档流无关，因此不占据空间,fixed 定位的元素和其它元素重叠</li>
+<li>relative 相对定位元素的定位是相对其本身原来位置,它原本所占的空间不会改变</li>
+<li>absolute 绝对定位的元素的位置相对于最近的已定位父元素,如果元素没有已定位的父元素，那么它的位置相对于 &lt;html&gt;,absolute 定位使元素的位置与文档流无关，因此不占据空间,absolute 定位的元素和其它元素重叠</li>
+<li>重叠的元素 元素的定位与文档流无关，所以它们可以覆盖页面上的其它元素,z-index 属性指定了一个元素的堆叠顺序,z-index 可以是正数负数或 0 ，数值越大则越显示在顶层</li>
+</ul>
+<ol start="5">
+<li>流式布局(单位使用%)</li>
+</ol>
+<ul>
+<li>流式布局是一种等比例缩放布局方式，在CSS代码中使用百分比来设置长度，也称百分比自适应的布局</li>
+</ul>
+<ol start="6">
+<li>多媒体查询布局</li>
+</ol>
+<ul>
+<li>@media 查询可以针对不同的媒体类型定义不同的样式，@media 可以针对不同的屏幕尺寸设置不同的样式<table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">screen</td>
+<td align="center">用于电脑屏幕，平板电脑，智能手机等</td>
+</tr>
+<tr>
+<td align="center">max-width</td>
+<td align="center">定义输出设备中的页面最大可见区域宽度</td>
+</tr>
+<tr>
+<td align="center">min-width</td>
+<td align="center">定义输出设备中的页面最小可见区域宽度</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<ol start="7">
+<li>适配不同设备需要使用不同长度单位</li>
+</ol>
+<ul>
+<li>在CSS的长度单位分为两种：绝对长度 和 相对长度,绝对长度：px、in、cm、mm、pt、pc;相对长度：em、rem、ex、vh、vw、vmin、vmax、%、fr<table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">px</td>
+<td align="center">计算机系统的数字化图像长度单位,1px &#x3D; 1&#x2F;96in</td>
+</tr>
+<tr>
+<td align="center">em</td>
+<td align="center">表示相对于父元素的字体大小,em是相对单位 ，没有一个固定的度量值，而是由其他元素尺寸来决定的相对值。默认情况下font-size &#x3D; 16px,那么1em &#x3D; 16px</td>
+</tr>
+<tr>
+<td align="center">rem</td>
+<td align="center">相对长度单位，取决于文档根元素（HTML）的字体尺寸，适用于依据字体尺寸进行的排版，适用于自适应</td>
+</tr>
+<tr>
+<td align="center">vw</td>
+<td align="center">viewpoint width，视窗宽度，1vw等于视窗宽度的1%。</td>
+</tr>
+<tr>
+<td align="center">vh</td>
+<td align="center">viewpoint height，视窗高度，1vh等于视窗高度的1%。</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+]]></content>
       <categories>
         <category>CSS</category>
       </categories>
